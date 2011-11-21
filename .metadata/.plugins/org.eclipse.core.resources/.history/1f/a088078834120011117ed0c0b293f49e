@@ -1,0 +1,18 @@
+/*
+ * card.h
+ *
+ *  Created on: Nov 18, 2011
+ *      Author: Eli
+ */
+
+#ifndef CARD_H_
+#define CARD_H_
+
+int getNumber();
+char getSuit();
+
+struct Card{
+	int Number;
+	char Suit;
+};
+#endif /* CARD_H_ */

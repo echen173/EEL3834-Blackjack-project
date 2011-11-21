@@ -1,0 +1,17 @@
+/*
+ * hand.h
+ *
+ *  Created on: Nov 19, 2011
+ *      Author: Eli
+ */
+
+#ifndef HAND_H_
+#define HAND_H_
+
+struct Hand{
+	int size;  //max is five
+	Card cards[5];
+};
+
+
+#endif /* HAND_H_ */

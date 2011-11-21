@@ -1,0 +1,20 @@
+/*
+ * deck.h
+ *
+ *  Created on: Nov 19, 2011
+ *      Author: Eli
+ */
+
+#ifndef DECK_H_
+#define DECK_H_
+
+struct Deck {
+	int remaining;
+	Card fullDeck[52];
+};
+
+void create(Card card[]);
+Card hit(Card card[]);
+
+
+#endif /* DECK_H_ */

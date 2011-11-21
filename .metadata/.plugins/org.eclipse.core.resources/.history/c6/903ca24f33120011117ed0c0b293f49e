@@ -1,0 +1,12 @@
+/*
+ * deck.cpp
+ *
+ *  Created on: Nov 16, 2011
+ *      Author: Eli
+ */
+
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+

@@ -1,0 +1,17 @@
+/*
+ * hand.cpp
+ *
+ *  Created on: Nov 18, 2011
+ *      Author: Eli
+ */
+
+#include <iostream>
+#include <cstdlib>
+#include "card.h"
+using namespace std;
+
+struct Hand{
+	int size;  //max is five
+	Card cards[5];
+};
+

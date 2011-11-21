@@ -1,0 +1,38 @@
+/*
+ * playingCards.h
+ *
+ *  Created on: Nov 19, 2011
+ *      Author: Eli
+ */
+
+#ifndef PLAYINGCARDS_H_
+#define PLAYINGCARDS_H_
+
+class Card{
+public:
+	int number;
+	char suit;
+	bool picked;
+
+	int getNumber();
+	char getSuit();
+	void setPicked();
+};
+
+class Deck {
+public:
+	int remaining;
+	Card card[52];
+
+	Card hit();
+};
+struct Hand{
+	int size;  //max is five
+	Card card[5];
+};
+
+Hand createHand(Deck deck);
+void printCard(Card card);
+void printHand(Hand hand);
+
+#endif /* PLAYINGCARDS_H_ */

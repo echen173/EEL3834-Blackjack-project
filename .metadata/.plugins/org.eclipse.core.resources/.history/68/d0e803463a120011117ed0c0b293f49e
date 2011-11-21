@@ -1,0 +1,23 @@
+/*
+ * deck.cpp
+ *
+ *  Created on: Nov 16, 2011
+ *      Author: Eli
+ */
+
+#include <iostream>
+#include <cstdlib>
+#include "card.h"
+using namespace std;
+
+struct Deck {
+	int remaining;
+	Card fullDeck[52];
+
+};
+
+void create(){		//initialize all 52 cards in deck
+	for (int i=0; i<4; i++);   //cards suits
+	for (int j=0; j<14; j++);  //cards value 1 - 13
+
+}

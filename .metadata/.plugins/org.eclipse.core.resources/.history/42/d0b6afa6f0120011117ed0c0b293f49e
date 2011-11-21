@@ -1,0 +1,26 @@
+/*
+ * card.cpp
+ *
+ *  Created on: Nov 18, 2011
+ *      Author: Eli
+ */
+
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+struct Card{
+	int number;
+	char suit;
+	bool picked;
+};
+
+int getNumber(Card card){
+	int x = card.number;
+	return x;
+}
+
+char getSuit(Card card){
+	int x = card.suit;
+	return x;
+}

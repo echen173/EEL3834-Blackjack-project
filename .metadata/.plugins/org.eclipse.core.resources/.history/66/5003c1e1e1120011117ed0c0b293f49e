@@ -1,0 +1,51 @@
+/*
+ * deck.cpp
+ *
+ *  Created on: Nov 16, 2011
+ *      Author: Eli
+ */
+
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include "card.h"
+using namespace std;
+
+struct Deck {
+	int remaining;
+	Card fullDeck[52];
+};
+
+void create(Card card[]){		//initialize all 52 cards in deck
+	int k = 0;
+	for (int i=1; i<=4; i++){   //card suits c(clubs), d(diamond), h(hearts), s(spades)
+		for (int j=1; j<=13; j++){  //card values 1 - 13
+			card[k].number = j;
+			switch(i){
+			case 1:
+				card[k].suit = 'c';
+				break;
+			case 2:
+				card[k].suit = 'd';
+				break;
+			case 3:
+				card[k].suit = 'h';
+				break;
+			case 4:
+				card[k].suit = 's';
+				break;
+			}
+			card[k].picked = 0; //initialize all cards to "not picked"
+			k++;
+		}
+	}
+}
+
+Card hit(Card card[]){
+
+}
+
+int main(){
+	srand(static_cast<unsigned int>(time(0))); //use time for RNG seed value
+	return 0;
+}

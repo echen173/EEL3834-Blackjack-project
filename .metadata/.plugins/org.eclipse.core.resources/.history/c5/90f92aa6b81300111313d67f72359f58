@@ -1,0 +1,70 @@
+/*
+ * blackjack.cpp
+ *
+ *  Created on: Nov 18, 2011
+ *      Author: Eli
+ */
+
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include "playingCards.h"
+using namespace std;
+
+void game();
+void instruction();
+
+int main(){
+	int entry;
+	bool play = 1;
+	srand(static_cast<unsigned int>(time(0))); //use time for RNG seed value
+
+	cout << "Welcome to Blackjack." << endl;
+	do{
+	cout << "Press 1 to play" << endl;
+	cout << "Press 2 to read instructions" << endl;
+	cout << "Press 3 to quit" << endl;
+	cin >> entry;
+
+	switch(entry){
+		case 1:
+			game();
+			cout << "Welcome back." << endl;
+			break;
+		case 2:
+			instruction();
+			break;
+		case 3:
+			play = 0;
+			cout << "Thanks for playing!";
+			break;
+		default:
+			cout << "Invalid selection";
+	}
+	}while(play);
+
+	return 0;
+}
+
+void game(){
+	Deck deck;
+	Hand player1, house;
+
+	player1 = deck.createHand();
+	house = deck.createHand();
+
+	printHand(player1);
+	cout << "\nThe dealer has: ? ";
+	printCard(house.card[1]);
+
+	cout << "\nRemaining cards in deck: " << endl;
+
+	for (int i = 0; i < 52; i++){
+		if (deck.card[i].picked == 0)
+		printCard(deck.card[i]);
+	}
+}
+
+void instruction(){
+
+}
