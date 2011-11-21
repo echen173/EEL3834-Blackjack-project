@@ -117,7 +117,7 @@ void game(){
 
 		while((Hsum < 17) && (!house.bust)){
 				printHand(house);
-				cout << "\nHouse sum: " << Hsum << endl;
+				cout << "\nDealer sum: " << Hsum << endl;
 				cout << "\nDealer will hit." << endl;
 				house.card[index] = deck.hit();
 				house.size++;
@@ -127,18 +127,20 @@ void game(){
 
 		if ((!house.bust) && ((Hsum > Psum) || (player1.bust))){
 			printHand(house);
-			cout << "\nHouse sum: " << Hsum << "\nDealer wins!"<< endl;
+			cout << "\nDealer sum: " << Hsum << "\nDealer wins!"<< endl;
 		}
 		else if (Hsum == Psum) {
 			printHand(house);
-			cout << "\nHouse sum: " << Hsum << "\nIt's a tie!"<< endl;
+			cout << "\nDealer sum: " << Hsum << "\nIt's a tie!"<< endl;
 		}
 
-		else if (house.bust)
-			cout << "Dealer busted, you win!" << endl;
+		else if (house.bust){
+			printHand(house);
+			cout << "\nDealer sum: " << Hsum << "\nDealer busted \nYou win!" << endl;
+		}
 		else {
 			printHand(house);
-			cout << "\nHouse sum: " << Hsum << "\nYou win!"<< endl;
+			cout << "\nDealer sum: " << Hsum << "\nYou win!"<< endl;
 		}
 	}
 
