@@ -129,7 +129,7 @@ void printCard(Card card){
 }
 
 void printHand(Hand hand){
-	cout << "\nYou have: ";
+	cout << "\nHand: ";
 	for (int i = 0; i < hand.size; i++){
 		printCard(hand.card[i]);
 	}

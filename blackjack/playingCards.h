@@ -32,7 +32,7 @@ public:
 		bust = 0;
 	}
 
-	int sum(){ //check for bust
+	int sum(){ //check for bust, NEED TO FIX ACE SCENARIO
 		int value, sum = 0;
 		for (int i = 0; i < size; i++){
 			if ((card[i].number == 11) || (card[i].number == 12) || (card[i].number == 13))

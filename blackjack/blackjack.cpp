@@ -65,9 +65,10 @@ void game(){
 	player1 = deck.createHand();
 	house = deck.createHand();
 
-	cout << "\nThe dealer has: ? ";
+	cout << "\nDEALER \nHand: ? ";
 	printCard(house.card[1]);
 
+	cout << "\n\nPLAYER" << endl;
 	printHand(player1);
 	int index = 2;
 	do{ //player's turn
@@ -89,12 +90,12 @@ void game(){
 			index++;
 			printHand(player1);
 			Psum = player1.sum(); //check if bust and return sum
-			cout << "\nYour sum is now: " << Psum << endl;
+			cout << "\nPlayer sum: " << Psum << endl;
 			break;
 		case 2:
 			printHand(player1);
 			Psum = player1.sum(); //check if bust and return sum
-			cout << "\nYour sum is now: " << Psum << endl;
+			cout << "\nPlayer sum: " << Psum << endl;
 			stop = 1;
 			break;
 		default:
@@ -105,24 +106,51 @@ void game(){
 	}while((!player1.bust) && (!stop));
 
 	if (player1.bust){
-		cout << "You busted!" << endl;
-	}
-
-	else if (Psum == 21){
-		cout << "You win!" << endl;
+		cout << "You busted! \nDealer wins!" << endl;
 	}
 
 	else { //computer's turn
+		stop = 0;
+		index = 2;
+		Hsum = house.sum();
+		cout << "\nDEALER" <<endl;
 
+		while((Hsum < 17) && (!house.bust)){
+				printHand(house);
+				cout << "\nHouse sum: " << Hsum << endl;
+				cout << "\nDealer will hit." << endl;
+				house.card[index] = deck.hit();
+				house.size++;
+				index++;
+				Hsum = house.sum(); //check if bust and return sum
+		}
+
+		if ((!house.bust) && ((Hsum > Psum) || (player1.bust))){
+			printHand(house);
+			cout << "\nHouse sum: " << Hsum << "\nDealer wins!"<< endl;
+		}
+		else if (Hsum == Psum) {
+			printHand(house);
+			cout << "\nHouse sum: " << Hsum << "\nIt's a tie!"<< endl;
+		}
+
+		else if (house.bust)
+			cout << "Dealer busted, you win!" << endl;
+		else {
+			printHand(house);
+			cout << "\nHouse sum: " << Hsum << "\nYou win!"<< endl;
+		}
 	}
 
-/*	cout << "\nRemaining cards in deck: " << endl;
+	/*
+	cout << "\nRemaining cards in deck: " << endl;
 
-	for (int i = 0; i < 52; i++){
+	for (int i = 0; i < 52; i++){ //for debugging: test if cards are taken out of deck
 		if (deck.card[i].picked == 0)
 		printCard(deck.card[i]);
 	}
 	*/
+
 }
 
 void instruction(){
