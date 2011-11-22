@@ -2873,3 +2873,104 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
 g++ -o blackjack.exe playingCards.o blackjack.o
 Build complete for project blackjack
 Time consumed: 600  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'void game()':
+..\blackjack.cpp:123:5: error: 'Dhit' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 310  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 710  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 770  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe playingCards.o blackjack.o
+c:/mingw/bin/../lib/gcc/mingw32/4.5.2/../../../../mingw32/bin/ld.exe: cannot open output file blackjack.exe: Permission denied
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 521  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 614  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe playingCards.o blackjack.o
+c:/mingw/bin/../lib/gcc/mingw32/4.5.2/../../../../mingw32/bin/ld.exe: cannot open output file blackjack.exe: Permission denied
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 514  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -o blackjack.exe playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 255  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 675  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 613  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe playingCards.o blackjack.o
+c:/mingw/bin/../lib/gcc/mingw32/4.5.2/../../../../mingw32/bin/ld.exe: cannot open output file blackjack.exe: Permission denied
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 512  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -o blackjack.exe playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 205  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 665  ms.  

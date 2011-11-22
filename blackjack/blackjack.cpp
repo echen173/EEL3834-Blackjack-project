@@ -36,7 +36,7 @@ int main(){
 	switch(entry){
 		case 1:
 			game();
-			cout << "Welcome back." << endl;
+			cout << "\nWelcome back." << endl;
 			break;
 		case 2:
 			instruction();
@@ -65,14 +65,14 @@ void game(){
 	player1 = deck.createHand();
 	house = deck.createHand();
 
-	cout << "\nDEALER \nHand: ? ";
+	cout << "\n**********\nDEALER \nHand: ? ";
 	printCard(house.card[1]);
 
-	cout << "\n\nPLAYER" << endl;
+	cout << "\n\n**********\nPLAYER" << endl;
 	printHand(player1);
 	int index = 2;
 	do{ //player's turn
-	cout << "\nPress 1 to hit" << endl;
+	cout << "\n\nPress 1 to hit" << endl;
 	cout << "Press 2 to stay" << endl;
 	cin >> entry;
 
@@ -106,14 +106,14 @@ void game(){
 	}while((!player1.bust) && (!stop));
 
 	if (player1.bust){
-		cout << "You busted! \nDealer wins!" << endl;
+		cout << "\nYou busted! \nDealer wins!" << endl;
 	}
 
 	else { //computer's turn
 		stop = 0;
 		index = 2;
 		Hsum = house.sum();
-		cout << "\nDEALER" <<endl;
+		cout << "\n**********\nDEALER" <<endl;
 
 		while((Hsum < 17) && (!house.bust)){
 				printHand(house);
@@ -125,23 +125,21 @@ void game(){
 				Hsum = house.sum(); //check if bust and return sum
 		}
 
-		if ((!house.bust) && ((Hsum > Psum) || (player1.bust))){
-			printHand(house);
-			cout << "\nDealer sum: " << Hsum << "\nDealer wins!"<< endl;
-		}
-		else if (Hsum == Psum) {
-			printHand(house);
-			cout << "\nDealer sum: " << Hsum << "\nIt's a tie!"<< endl;
-		}
+		printHand(house);
+		cout << "\nDealer sum: " << Hsum << endl;
 
-		else if (house.bust){
-			printHand(house);
-			cout << "\nDealer sum: " << Hsum << "\nDealer busted \nYou win!" << endl;
+		if(!house.bust){
+			cout << "\nDealer will stay." << endl;
+
+		if ((!house.bust) && ((Hsum > Psum) || (player1.bust)))
+			cout << "\nDealer wins!"<< endl;
+		else if (Hsum == Psum)
+			cout << "\nIt's a tie!"<< endl;
+		else
+			cout << "\nYou win!"<< endl;
 		}
-		else {
-			printHand(house);
-			cout << "\nDealer sum: " << Hsum << "\nYou win!"<< endl;
-		}
+		else
+			cout << "\nDealer busts. \nYou win!" << endl;
 	}
 
 	/*
