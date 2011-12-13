@@ -21,12 +21,16 @@ using namespace std;
 
 void game();
 void instruction();
+
+//ASCII Images
 void printMenu();
 void printPTurn();
 void printDTurn();
 void printPWin();
 void printDWin();
 void printTie();
+void printSave();
+void printExit();
 
 int main(){
 	int entry, chips;
@@ -68,6 +72,7 @@ int main(){
 			instruction();
 			break;
 		case 3:
+			printSave();
 			cout << "\nAre you sure you want to create a new save? (Previous save will be overwritten)\nY/N: ";
 			cin >> check;
 			if(check == 'y' || check == 'Y')
@@ -75,7 +80,7 @@ int main(){
 			break;
 		case 4:
 			play = 0;
-			cout << "Thanks for playing!";
+			printExit();
 			break;
 		default:
 			cout << "Invalid selection. Try again." << endl;
@@ -152,7 +157,7 @@ void game(){
 do{ //player's turn
 
 	printPTurn(); //Player turn
-			cout << "\n\nPress <1 to Hit> <2 to Stay>";
+			cout << "\n\nPress <1 to Hit> <2 to Stand>";
 			if(f_flag)
 				cout << "<3 to Surrender> <4 to Double Down>: " << endl;
 			else
@@ -177,7 +182,7 @@ do{ //player's turn
 				Psum = player1.sum(); //check if bust and return sum
 				cout << "\nPlayer sum: " << Psum << endl;
 				break;
-			case 2://Stay
+			case 2://Stand
 				printHand(player1);
 				Psum = player1.sum(); //check if bust and return sum
 				cout << "\nPlayer sum: " << Psum << endl;
@@ -188,8 +193,8 @@ do{ //player's turn
 				s_flag = 1;
 				stop = 1;
 				}
-				else{ //Stay routine
-					cout << "Invalid selection. \nDefaulted to 'Stay'." << endl;
+				else{ //Stand routine
+					cout << "Invalid selection. \nDefaulted to 'Stand'." << endl;
 					printHand(player1);
 									Psum = player1.sum(); //check if bust and return sum
 									cout << "\nPlayer sum: " << Psum << endl;
@@ -207,11 +212,11 @@ do{ //player's turn
 								Psum = player1.sum(); //check if bust and return sum
 								cout << "\nPlayer sum: " << Psum << endl;
 				}
-				else { //Stay routine
+				else { //Stand routine
 					if((bet*2)>chips)  //message for not enough chips to double down
 						cout << "You don't have enough chips for that!" << endl;
 					else{
-					cout << "Invalid selection. \nDefaulted to 'Stay'." << endl;
+					cout << "Invalid selection. \nDefaulted to 'Stand'." << endl;
 					printHand(player1);
 									Psum = player1.sum(); //check if bust and return sum
 									cout << "\nPlayer sum: " << Psum << endl;
@@ -220,8 +225,8 @@ do{ //player's turn
 				}
 				break;
 			default:
-				cout << "Invalid selection. \nDefaulted to 'Stay'." << endl;
-				printHand(player1); //Stay routine
+				cout << "Invalid selection. \nDefaulted to 'Stand'." << endl;
+				printHand(player1); //Stand routine
 								Psum = player1.sum(); //check if bust and return sum
 								cout << "\nPlayer sum: " << Psum << endl;
 								stop = 1;
@@ -259,7 +264,7 @@ do{ //player's turn
 			cout << "\nDealer sum: " << Hsum << endl;
 
 			if(!house.bust){
-				cout << "\nDealer will stay." << endl;
+				cout << "\nDealer will Stand." << endl;
 
 				if ((!house.bust) && ((Hsum > Psum) || (player1.bust))){ //LOSS
 					printDWin();
@@ -314,15 +319,38 @@ if (cin.fail()){
 }
 
 void instruction(){
-	cout << " \n**************************************************************************************\n" << endl;
+	cout << " \n********************************************************************************\n" << endl;
 	cout << "  @@ .@@  @# #@@@@ #@@@@@`#@@@@@ #@  +@. #@@@@ #@@@@@`:@: .@@@@. #@# :@. @@@@#" << endl;
 	cout << "  @@ .@@# @# @@ :@.  #@`  #@` @@ #@  +@.`@@ `@+  #@`  :@: @@  @@ #@@`:@..@, @@" << endl;
 	cout << "  @@ .@@@ @# @@@@:   #@`  #@@@@@ #@  +@.'@,      #@`  :@: @#  #@ #@@@:@. @@@@ " << endl;
 	cout << "  @@ .@:@@@#   @@@:  #@`  #@@@@  #@  +@.'@,      #@`  :@: @#  #@ #@ @@@.   @@@" << endl;
 	cout << "  @@ .@:`@@# @@ `@+  #@`  #@`'@@ '@, #@ `@# .@+  #@`  :@: @@  @@ #@ #@@.'@, #@" << endl;
 	cout << "  @@ .@: #@# @@@@@   #@`  #@` @@  @@@@#  #@@@@   #@`  :@: .@@@@. #@  @@. @@@@@" << endl;
-	cout << " \n**************************************************************************************\n" << endl;
+	cout << " \n********************************************************************************\n" << endl;
 
+	cout << "Goal: Beat the dealer by having a higher value hand!" << endl;
+	cout << "\nSum up your cards!" << endl;
+	cout << "Cards hold values indicated by their number" << endl;
+	cout << "Exceptions: J, Q, K = 10, A = 1 or 11 (best value will be chosen for you)\n" << endl;
+	cout << "IMPORTANT: Maximum value you can hold is 21. If you go over, you bust (and lose)!\n" << endl;
+
+	cout << "Your actions:\n" << endl;
+	cout << "<Hit>: Add a card to your hand." << endl;
+	cout << "<Stand>: Ends your turn." << endl;
+	cout << "<Surrender>: Forfeit your hand, and receive half your bet back.\n(Only available as first decision of a hand)" << endl;
+	cout << "<Double Down>: Bet increased 100%. Automatic stand after receiving one card.\n(Only available as first decision of a hand)\n" << endl;
+
+	cout << "Structure of the Game:\n" << endl;
+	cout << "1) You will place your bet." << endl;
+	cout << "2) Both you and dealer will receive a hand(two cards). One of the dealer's cards will be hidden." << endl;
+	cout << "3) Perform your actions until your turn is ended." << endl;
+	cout << "4) Dealer will take its turn, then value of both hands will be compared." << endl;
+	cout << "5) Win: Value of your bet will be added to your chip total." << endl;
+	cout << "   Loss: Value of your bet will be taken from your chip total." << endl;
+	cout << "   Tie: Value of your bet will be returned to you." << endl;
+	cout << endl;
+	cout << "If you run out of chips, you may create a new save in the menu to restore 1000 chips.\n" << endl;
+	cout << "Good luck! And most important of all, Have FUN!\n" << endl;
 }
 
 void printMenu(){
@@ -337,12 +365,12 @@ void printMenu(){
 	cout << "Welcome to Blackjack.\n" << endl;
 	cout << "Press: 1 to start playing!" << endl;
 	cout << "       2 to read the instructions" << endl;
-	cout << "       3 to reset save\n\t (Great for if you go broke!)" << endl;
+	cout << "       3 to reset your save/chips" << endl;
 	cout << "       4 to quit" << endl;
 }
 
 void printPTurn(){
-	cout << " \n*************************************************************************\n" << endl;
+	cout << " \n\n*************************************************************************\n" << endl;
 	cout << " @@@@@``@#     @@@  ,@# +@: @@@@@ #@@@@@    @@@@@@ @@  @@ #@@@@@ #@# :@." << endl;
 	cout << " @@ ,@+`@#     @;@   @@ @@  @#    #@` @@      @@   @@  @@ #@` @@ #@@`:@." << endl;
 	cout << " @@@@@,`@#    +@ @#   @@@   @@@@@ #@@@@@      @@   @@  @@ #@@@@@ #@@@:@." << endl;
@@ -387,12 +415,44 @@ void printDWin(){
 }
 
 void printTie(){
-	cout << " \n****************************\n" << endl;
+	cout << " \n*******************\n" << endl;
 	cout << "#@@@@@`:@: @@@@@:" << endl;
 	cout << "  #@`  :@: @@    " << endl;
 	cout << "  #@`  :@: @@@@@ " << endl;
 	cout << "  #@`  :@: @@@@@ " << endl;
 	cout << "  #@`  :@: @@    " << endl;
 	cout << "  #@`  :@: @@@@@+" << endl;
-	cout << " \n****************************\n" << endl;
+	cout << " \n*******************\n" << endl;
+}
+
+void printSave(){
+	cout << " \n*********************************************************\n" << endl;
+	cout << "  .@@  @# @@@@@:@@ #@# @@    @@@@#   @@+  @@  +@.+@@@@@" << endl;
+	cout << "  .@@# @# @@    +@ @@@ @+   .@, @@  +@@@  #@` @@ +@.   " << endl;
+	cout << "  .@@@ @# @@@@@ .@.@,@.@.    @@@@   @@:@`  @+ @# +@@@@+" << endl;
+	cout << "  .@:@@@# @@@@@  @@@ @@@       @@@ `@: @#  @@:@  +@@@@+" << endl;
+	cout << "  .@:`@@# @@     @@@ @@@    '@, #@ #@@@@@  '@@@  +@.   " << endl;
+	cout << "  .@: #@# @@@@@+ #@+ +@@     @@@@@ @@  #@.  @@'  +@@@@@" << endl;
+	cout << " \n*********************************************************\n" << endl;
+}
+
+void printExit(){
+	cout << " \n*************************************************************************\n" << endl;
+	cout << "#@@@@@`@@                @@             '@@" << endl;
+	cout << "  #@`  @@                @@             @@ " << endl;
+	cout << "  #@`  @@@@@  @@@# @@#@@ @@ @@ :@@@`   :@@@ #@@@ ,@+@" << endl;
+	cout << "  #@`  @@ @@ @@ #@ @@ @@ @@@@  @@       @@ :@:,@',@# " << endl;
+	cout << "  #@`  @@ #@ '@@@@ @@ #@ @@@@.  @@@@    @@ #@  @#,@. " << endl;
+	cout << "  #@`  @@ #@ @@@@@ @@ #@ @@ @@ @@ @@    @@ .@@@@.,@` " << endl;
+	cout << "  #@`  @@ #@  @',@ @@ #@ @@ .@+ @@@     @@   @@  ,@` " << endl;
+	cout << endl;
+	cout << "`@@@@@ #@             @#             @@" << endl;
+	cout << "`@# @@ #@                            @@" << endl;
+	cout << "`@@@@@ #@ '@@@@ @@ #@ @# @#@@# @@@@@ @#" << endl;
+	cout << "`@@@@  #@    @@ :@ @+ @# @# @@`@: @@ @:" << endl;
+	cout << "`@#    #@ @@ #@  @:@  @# @# @@ @# @@  " << endl;
+	cout << "`@#    #@ @@@#@  #@@  @# @# @@ #@@@@ @#" << endl;
+	cout << "                 :@,           @# @@   " << endl;
+	cout << "                @@@            @@@@    " << endl;
+	cout << " \n*************************************************************************\n" << endl;
 }
