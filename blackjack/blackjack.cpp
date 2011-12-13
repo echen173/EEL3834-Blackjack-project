@@ -87,9 +87,12 @@ void game(){
 	Deck deck;
 	Hand player1, house;
 	int contin = 1, chips, betselect, bet, entry, Psum = 0, Hsum;
-	bool stop = 0, s_flag;
+	bool stop = 0, s_flag, f_flag;
 
 while(contin){
+	s_flag = 0; //surrender flag
+	f_flag = 1; //first action flag
+
 	chips = loadPlayer();
 	player1 = deck.createHand();
 	house = deck.createHand();
@@ -135,10 +138,12 @@ while(contin){
 			}
 
 do{ //player's turn
-	s_flag = 0; //surrender flag
-
 		if(!(Psum == 21)){ //ask user for action
-			cout << "\n\nPress <1 to Hit> <2 to Stay> <3 to Surrender> <4 to Double Down>: " << endl;
+			cout << "\n\nPress <1 to Hit> <2 to Stay> ";
+			if(f_flag)
+				cout << "<3 to Surrender> <4 to Double Down>: " << endl;
+			else
+				cout << " : "<< endl;
 			cin >> entry;
 		}
 		else{ //if user is at 21, automatically stay
@@ -166,11 +171,21 @@ do{ //player's turn
 				stop = 1;
 				break;
 			case 3: //Surrender
+				if(f_flag){
 				chips -= (bet/2);
 				s_flag = 1;
 				stop = 1;
+				}
+				else{ //Stay routine
+					cout << "Invalid selection. \nDefaulted to 'Stay'." << endl;
+					printHand(player1);
+									Psum = player1.sum(); //check if bust and return sum
+									cout << "\nPlayer sum: " << Psum << endl;
+									stop = 1;
+				}
 				break;
 			case 4: //Double Down
+				if(f_flag){
 				bet *= 2;
 				stop = 1;
 				player1.card[index] = deck.hit(); //Hit routine
@@ -179,15 +194,21 @@ do{ //player's turn
 								printHand(player1);
 								Psum = player1.sum(); //check if bust and return sum
 								cout << "\nPlayer sum: " << Psum << endl;
+				}
+				else { //Stay routine
+					cout << "Invalid selection. \nDefaulted to 'Stay'." << endl;
+					printHand(player1);
+									Psum = player1.sum(); //check if bust and return sum
+									cout << "\nPlayer sum: " << Psum << endl;
+									stop = 1;
+				}
 				break;
 			default:
-				cout << "Invalid selection. \nDefaulted to 'Hit'." << endl;
-				player1.card[index] = deck.hit(); //Hit routine
-								player1.size++;
-								index++;
-								printHand(player1);
+				cout << "Invalid selection. \nDefaulted to 'Stay'." << endl;
+				printHand(player1); //Stay routine
 								Psum = player1.sum(); //check if bust and return sum
 								cout << "\nPlayer sum: " << Psum << endl;
+								stop = 1;
 				break;
 				}
 			}
