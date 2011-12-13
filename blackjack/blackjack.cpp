@@ -6,8 +6,8 @@
  */
 
 //write in checks for when chips are zero
-//prevent chips from going below zero
-//fix Ace scenario
+//consider improving code by using more functions
+//make printMenu /pseudo-gui
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -40,7 +40,7 @@ int main(){
 	do{
 	cout << "Press 1 to start playing!" << endl;
 	cout << "Press 2 to read the instructions" << endl;
-	cout << "Press 3 to create a new save\n\t (Great for if you go broke!)" << endl;
+	cout << "Press 3 to reset save\n\t (Great for if you go broke!)" << endl;
 	cout << "Press 4 to quit" << endl;
 	cin >> entry;
 
@@ -98,7 +98,11 @@ void game(){
 	f_flag = 1; //first action flag
 	stop = 0;
 
-	cout << "\n\nPlace your bet:\n\nPress <1 for $5> <2 for $25> <3 for $50> "
+	printInfo();
+	chips = loadPlayer();
+
+
+	cout << "\n\nPlace your bet:\n\nPress <1 for $10> <2 for $20> <3 for $50> "
 					"\n\t<4 for $100> <5 for ALL IN>: "; 								//betting phase
 			cin >> betselect;
 			if (!cin.fail()){
@@ -131,7 +135,10 @@ void game(){
 					cin.ignore();
 				}
 
-	chips = loadPlayer();
+		if (bet > chips) //check for enough chips
+			cout << "\nYou don't have enough chips for that! Reset your save if you need to." << endl;
+		else{
+
 	player1 = deck.createHand();
 	house = deck.createHand();
 
@@ -188,7 +195,7 @@ do{ //player's turn
 				}
 				break;
 			case 4: //Double Down
-				if(f_flag){
+				if((f_flag) && !((bet*2)>chips)){
 				bet *= 2;
 				stop = 1;
 				player1.card[index] = deck.hit(); //Hit routine
@@ -199,6 +206,9 @@ do{ //player's turn
 								cout << "\nPlayer sum: " << Psum << endl;
 				}
 				else { //Stay routine
+					if((bet*2)>chips)  //message for not enough chips to double down
+						cout << "You don't have enough chips for that!" << endl;
+
 					cout << "Invalid selection. \nDefaulted to 'Stay'." << endl;
 					printHand(player1);
 									Psum = player1.sum(); //check if bust and return sum
@@ -268,6 +278,7 @@ do{ //player's turn
 		cout << "\nYou surrendered." << endl;
 		chips -= ((float)bet/2);
 		}
+	}
 
 update(chips); //update player's chips into save file after a hand
 

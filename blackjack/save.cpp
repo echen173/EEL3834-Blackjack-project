@@ -33,7 +33,7 @@ int loadPlayer(){ 	//load Existing Player
 	string readIn;
 
 	//char confirm = 'n';
-	int chips, junk;
+	int chips;
 
 		fileIn.open("save.txt");
 		if(!fileIn.fail()){
@@ -84,5 +84,23 @@ void update(int chips){ //update save file
 		file.close();
 			}
 			else //file failed to open
-				cout << "Error! Save file not found!" << endl;
+				cout << "\nError! Save file not found!" << endl;
 }
+
+void printInfo(){
+
+	ifstream fileIn;
+	vector<string> in;
+	string readIn;
+
+		fileIn.open("save.txt");
+		if(!fileIn.fail()){
+			fileIn >> readIn;
+			cout << "\nWelcome ";
+			cout << readIn <<"!"<< endl;
+			fileIn.close();
+		}
+		else //file failed to open
+			cout << "\nError! Save file not found!" << endl;
+}
+

@@ -3903,3 +3903,106 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
 g++ -o blackjack.exe save.o playingCards.o blackjack.o
 Build complete for project blackjack
 Time consumed: 702  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 749  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 748  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+..\save.cpp: In function 'int loadPlayer()':
+..\save.cpp:36:13: warning: unused variable 'junk'
+..\save.cpp: In function 'void printInfo()':
+..\save.cpp:96:6: warning: unused variable 'chips'
+..\save.cpp:96:13: warning: unused variable 'junk'
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 1435  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+..\save.cpp: In function 'int loadPlayer()':
+..\save.cpp:36:13: warning: unused variable 'junk'
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 811  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 842  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 811  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'void game()':
+..\blackjack.cpp:198:35: error: expected ')' before '{' token
+Build error occurred, build is stopped
+Time consumed: 374  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+c:/mingw/bin/../lib/gcc/mingw32/4.5.2/../../../../mingw32/bin/ld.exe: cannot open output file blackjack.exe: Permission denied
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 624  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'void game()':
+..\blackjack.cpp:198:29: error: 'chipshttp' was not declared in this scope
+..\blackjack.cpp:198:38: error: expected ')' before ':' token
+..\blackjack.cpp:199:13: error: expected ')' before ';' token
+..\blackjack.cpp:208:5: error: 'else' without a previous 'if'
+..\blackjack.cpp:216:4: error: case label not within a switch statement
+..\blackjack.cpp:225:3: error: expected 'while' before '}' token
+..\blackjack.cpp:225:3: error: expected '(' before '}' token
+..\blackjack.cpp:225:3: error: expected primary-expression before '}' token
+..\blackjack.cpp:225:3: error: expected ')' before '}' token
+..\blackjack.cpp:225:3: error: expected ';' before '}' token
+..\blackjack.cpp: At global scope:
+..\blackjack.cpp:302:1: error: expected declaration before '}' token
+Build error occurred, build is stopped
+Time consumed: 374  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 686  ms.  
