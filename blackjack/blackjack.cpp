@@ -101,36 +101,41 @@ while(contin){
 	printHand(player1);
 	int index = 2;
 
-
+	cout << "\n\nPlace your bet:\n\nPress <1 for $5> <2 for $25> <3 for $50> "
+				"\n\t<4 for $100> <5 for ALL IN>: "; 								//betting phase
+		cin >> betselect;
+		if (!cin.fail()){
+			switch(betselect){ //finishing betting phase
+			case 1:
+				bet = 5;
+				break;
+			case 2:
+				bet = 25;
+				break;
+			case 3:
+				bet = 50;
+				break;
+			case 4:
+				bet = 100;
+				break;
+			case 5:
+				bet = chips;
+				break;
+			default:
+				cout << "Invalid selection. Bet defaulted to $5." << endl;
+				bet = 5;
+				break;
+			}
+		}
+		else {
+				cout << "Invalid selection. Bet defaulted to $5." << endl;
+				bet = 5;
+				cin.clear();
+				cin.ignore();
+			}
 
 do{ //player's turn
 	s_flag = 0; //surrender flag
-
-	cout << "\n\nPlace your bet:\n\nPress <1 for $5> <2 for $25> <3 for $50> "
-			"\n\t<4 for $100> <5 for ALL IN>: "; 								//betting phase
-	cin >> betselect;
-	if (!cin.fail()){
-		switch(betselect){ //finishing betting phase
-		case 1:
-			bet = 5;
-			break;
-		case 2:
-			bet = 25;
-			break;
-		case 3:
-			bet = 50;
-			break;
-		case 4:
-			bet = 100;
-			break;
-		case 5:
-			bet = chips;
-			break;
-		default:
-			cout << "Invalid selection. Bet defaulted to $5." << endl;
-			bet = 5;
-			break;
-		}
 
 		if(!(Psum == 21)){ //ask user for action
 			cout << "\n\nPress <1 to Hit> <2 to Stay> <3 to Surrender> <4 to Double Down>: " << endl;
@@ -186,14 +191,6 @@ do{ //player's turn
 				break;
 				}
 			}
-		}
-		else {
-			if (cin.fail()){
-					cout << "Invalid selection" << endl;
-					cin.clear();
-					cin.ignore();
-				}
-		}
 		}while((!player1.bust) && (!stop));
 
 	if(!s_flag){//Surrender flag not set
