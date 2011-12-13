@@ -156,5 +156,6 @@ void printHand(Hand hand){
 	for (int i = 0; i < hand.size; i++){
 		printCard(hand.card[i]);
 	}
+	cout << "\n**********" << endl;
 }
 

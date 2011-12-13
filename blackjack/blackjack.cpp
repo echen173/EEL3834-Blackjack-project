@@ -21,6 +21,7 @@ using namespace std;
 
 void game();
 void instruction();
+void printMenu();
 
 int main(){
 	int entry, chips;
@@ -29,21 +30,15 @@ int main(){
 	srand(static_cast<unsigned int>(time(0))); //use time for RNG seed value
 	ifstream newFile;
 
-	cout << "Welcome to Blackjack.\n" << endl;
 	newFile.open("save.txt");
-
 	if(newFile.fail()){ //runs if first time playing
 		cout << "Hi! I noticed this is your first time playing. Please create a save file! <Press Enter>" << endl;
 		newPlayer();
 	}
 
 	do{
-		//INSERT PRINT MENU HERE WITH FANCY FORMATTING
-	cout << "Press 1 to start playing!" << endl;
-	cout << "Press 2 to read the instructions" << endl;
-	cout << "Press 3 to reset save\n\t (Great for if you go broke!)" << endl;
-	cout << "Press 4 to quit" << endl;
-	cin >> entry;
+		printMenu();
+		cin >> entry; //menu choice
 
 	if (cin.fail()){
 		cout << "Invalid selection" << endl;
@@ -54,6 +49,7 @@ int main(){
 
 	switch(entry){
 		case 1:
+			printInfo(); //Welcome the player
 			chips = loadPlayer();
 			cout << "\nYour chips have been loaded\nNumber of chips: " << chips << endl;
 			if(chips==0)
@@ -67,7 +63,7 @@ int main(){
 			instruction();
 			break;
 		case 3:
-			cout << "Are you sure you want to create a new save? (Previous save will be overwritten)\nY/N: ";
+			cout << "\nAre you sure you want to create a new save? (Previous save will be overwritten)\nY/N: ";
 			cin >> check;
 			if(check == 'y' || check == 'Y')
 			newPlayer();
@@ -91,8 +87,6 @@ void game(){
 	Hand player1, house;
 	int contin = 1, chips, betselect, bet, entry, Psum = 0, Hsum = 0;
 	bool stop, s_flag, f_flag;
-
-	printInfo(); //Welcome the player
 
 	while(contin){
 	deck.shuffle();
@@ -144,10 +138,10 @@ void game(){
 	player1 = deck.createHand();
 	house = deck.createHand();
 
-	cout << "\n**********\nDEALER \nHand: ? ";
+	cout << "\n************\nDEALER Hand: ? ";
 	printCard(house.card[1]);
 
-	cout << "\n\n**********\nPLAYER" << endl;
+	cout << "\n\n************\nPLAYER";
 	printHand(player1);
 
 do{ //player's turn
@@ -240,7 +234,7 @@ do{ //player's turn
 			stop = 0;
 			index = 2;
 			Hsum = house.sum();
-			cout << "\n**********\nDEALER" <<endl;
+			cout << "\n**********\nDEALER";
 
 			while((Hsum < 17) && (!house.bust)){
 				printHand(house);
@@ -310,6 +304,23 @@ if (cin.fail()){
 }
 
 void instruction(){
+
+}
+
+void printMenu(){
+	cout << " \n**************************************************************\n" << endl;
+	cout << " #@@@@@ #@`     @@+   @@@@# #@ `@@    #@`  @@@   #@@@@ .@+ @@," << endl;
+	cout << " #@` @@ #@`    +@@@  #@, #@ #@ @@     #@`  @;@  `@@ `@+.@+@@:  " << endl;
+	cout << " #@@@@' #@`    @@:@` @@     #@@@#     #@` +@ @# '@,    .@@@@ " << endl;
+	cout << " #@@@@@ #@`   `@: @# @@     #@@@@`    #@` @@ @@ '@,    .@@@@# " << endl;
+	cout << " #@` #@ #@`   #@@@@@ #@. #@ #@. @@ @@ #@ `@@@@@.`@# .@+.@# @@ " << endl;
+	cout << " #@@@@@ #@@@@.@@  #@. @@@@# #@  @@'`@@@@ #@  `@# #@@@@ .@+ ,@@" << endl;
+	cout << " \n**************************************************************" << endl;
+	cout << "Welcome to Blackjack.\n" << endl;
+	cout << "Press: 1 to start playing!" << endl;
+	cout << "       2 to read the instructions" << endl;
+	cout << "       3 to reset save\n\t (Great for if you go broke!)" << endl;
+	cout << "       4 to quit" << endl;
 
 }
 

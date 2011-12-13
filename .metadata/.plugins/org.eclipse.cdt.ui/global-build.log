@@ -4030,3 +4030,129 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
 g++ -o blackjack.exe save.o playingCards.o blackjack.o
 Build complete for project blackjack
 Time consumed: 749  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp:317:10: warning: missing terminating " character
+..\blackjack.cpp:317:2: error: missing terminating " character
+..\blackjack.cpp:318:5: error: stray '`' in program
+..\blackjack.cpp:318:5: error: stray '`' in program
+..\blackjack.cpp:318:5: error: stray '`' in program
+..\blackjack.cpp:318:5: error: stray '`' in program
+..\blackjack.cpp:318:5: error: stray '`' in program
+..\blackjack.cpp:318:5: error: stray '`' in program
+..\blackjack.cpp:319:6: error: stray '`' in program
+..\blackjack.cpp:319:6: error: stray '`' in program
+..\blackjack.cpp:319:6: error: stray '`' in program
+..\blackjack.cpp:319:6: error: stray '`' in program
+..\blackjack.cpp:319:6: error: stray '`' in program
+..\blackjack.cpp:319:6: error: stray '`' in program
+..\blackjack.cpp:320:6: error: stray '`' in program
+..\blackjack.cpp:320:6: error: stray '`' in program
+..\blackjack.cpp:320:6: error: stray '`' in program
+..\blackjack.cpp:320:6: error: stray '`' in program
+..\blackjack.cpp:320:6: error: stray '`' in program
+..\blackjack.cpp:320:6: error: stray '`' in program
+..\blackjack.cpp:321:6: error: stray '`' in program
+..\blackjack.cpp:321:6: error: stray '`' in program
+..\blackjack.cpp:321:6: error: stray '`' in program
+..\blackjack.cpp:321:6: error: stray '`' in program
+..\blackjack.cpp:322:6: error: stray '`' in program
+..\blackjack.cpp:322:6: error: stray '`' in program
+..\blackjack.cpp:322:6: error: stray '`' in program
+..\blackjack.cpp:322:6: error: stray '`' in program
+..\blackjack.cpp:322:6: error: stray '`' in program
+..\blackjack.cpp:322:6: error: stray '`' in program
+..\blackjack.cpp:322:6: error: stray '`' in program
+..\blackjack.cpp:323:6: error: stray '`' in program
+..\blackjack.cpp:323:6: error: stray '`' in program
+..\blackjack.cpp:323:6: error: stray '`' in program
+..\blackjack.cpp:323:6: error: stray '`' in program
+..\blackjack.cpp:324:6: error: stray '`' in program
+..\blackjack.cpp:324:6: error: stray '`' in program
+..\blackjack.cpp:324:6: error: stray '`' in program
+..\blackjack.cpp:324:6: error: stray '`' in program
+..\blackjack.cpp:324:6: error: stray '`' in program
+..\blackjack.cpp:325:5: error: stray '`' in program
+..\blackjack.cpp:325:5: error: stray '`' in program
+..\blackjack.cpp:326:5: error: stray '`' in program
+..\blackjack.cpp:326:5: error: stray '`' in program
+..\blackjack.cpp:326:5: error: stray '`' in program
+..\blackjack.cpp:326:5: error: stray '`' in program
+..\blackjack.cpp:326:5: error: stray '`' in program
+..\blackjack.cpp:326:5: error: stray '`' in program
+..\blackjack.cpp:326:5: error: stray '`' in program
+..\blackjack.cpp:326:5: error: stray '`' in program
+..\blackjack.cpp:327:65: warning: missing terminating " character
+..\blackjack.cpp:327:57: error: missing terminating " character
+..\blackjack.cpp: In function 'void printMenu()':
+..\blackjack.cpp:318:6: error: 'dMMMdomMms' was not declared in this scope
+..\blackjack.cpp:318:18: error: expected ';' before 'hMMMN'
+Build error occurred, build is stopped
+Time consumed: 3651  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 874  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 812  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 764  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+c:/mingw/bin/../lib/gcc/mingw32/4.5.2/../../../../mingw32/bin/ld.exe: cannot open output file blackjack.exe: Permission denied
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 624  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 312  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o playingCards.o ..\playingCards.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 1185  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for blackjack
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 765  ms.  
