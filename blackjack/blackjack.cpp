@@ -33,7 +33,7 @@ int main(){
 	newFile.open("save.txt");
 
 	if(newFile.fail()){ //runs if first time playing
-		cout << "Hi! I notice this is your first time here. You need to create a save file! <Press Enter>" << endl;
+		cout << "Hi! I noticed this is your first time playing. Please create a save file! <Press Enter>" << endl;
 		newPlayer();
 	}
 
@@ -176,7 +176,6 @@ do{ //player's turn
 				break;
 			case 3: //Surrender
 				if(f_flag){
-				chips -= (bet/2);
 				s_flag = 1;
 				stop = 1;
 				}
@@ -267,7 +266,7 @@ do{ //player's turn
 
 	else { //Surrender flag is set
 		cout << "\nYou surrendered." << endl;
-		chips -= bet;
+		chips -= ((float)bet/2);
 		}
 
 update(chips); //update player's chips into save file after a hand
