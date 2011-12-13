@@ -5,7 +5,9 @@
  *      Author: Eli
  */
 
-//write in a check at before game, to see if player has chips
+//write in checks for when chips are zero
+//prevent chips from going below zero
+//fix Ace scenario
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -27,7 +29,7 @@ int main(){
 	srand(static_cast<unsigned int>(time(0))); //use time for RNG seed value
 	ifstream newFile;
 
-	cout << "Welcome to Blackjack." << endl;
+	cout << "Welcome to Blackjack.\n" << endl;
 	newFile.open("save.txt");
 
 	if(newFile.fail()){ //runs if first time playing
@@ -141,7 +143,7 @@ void game(){
 
 do{ //player's turn
 		if(!(Psum == 21)){ //ask user for action
-			cout << "\n\nPress <1 to Hit> <2 to Stay> ";
+			cout << "\n\nPress <1 to Hit> <2 to Stay>";
 			if(f_flag)
 				cout << "<3 to Surrender> <4 to Double Down>: " << endl;
 			else

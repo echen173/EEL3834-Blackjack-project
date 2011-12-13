@@ -48,15 +48,12 @@ public:
 			sum += value;
 		}
 
+		sum += (ace*11);
 		while(ace){ //Ace can be 1 or 11
-			if ((sum + 11)<=21){
-				sum += 11;
-				ace--;
+			if (sum>21){
+				sum -= 10;
 			}
-			else{
-				sum += 1;
-				ace--;
-			}
+			ace--;
 		}
 
 		if (sum > 21)
