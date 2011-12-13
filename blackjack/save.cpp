@@ -96,8 +96,10 @@ void printInfo(){
 		fileIn.open("save.txt");
 		if(!fileIn.fail()){
 			fileIn >> readIn;
+			cout << " \n****************************************************************\n" << endl;
 			cout << "\n\nWelcome ";
 			cout << readIn <<"!"<< endl;
+			cout << " \n****************************************************************\n" << endl;
 			fileIn.close();
 		}
 		else //file failed to open

@@ -22,6 +22,8 @@ using namespace std;
 void game();
 void instruction();
 void printMenu();
+void printPTurn();
+void printDTurn();
 
 int main(){
 	int entry, chips;
@@ -98,8 +100,8 @@ void game(){
 	chips = loadPlayer();
 
 
-	cout << "\n\nPlace your bet:\n\nPress <1 for $10> <2 for $20> <3 for $50> "
-					"\n\t<4 for $100> <5 for ALL IN>: "; 								//betting phase
+	cout << "\n\nPlace your bet:\n\nPress: <1 for $10> <2 for $20> <3 for $50> "
+					"\n      <4 for $100> <5 for ALL IN>: "; 								//betting phase
 			cin >> betselect;
 			if (!cin.fail()){
 				switch(betselect){ //finishing betting phase
@@ -138,7 +140,7 @@ void game(){
 	player1 = deck.createHand();
 	house = deck.createHand();
 
-	cout << "\n************\nDEALER Hand: ? ";
+	cout << "\n************\nDEALER \nHand: ? ";
 	printCard(house.card[1]);
 
 	cout << "\n\n************\nPLAYER";
@@ -146,6 +148,7 @@ void game(){
 
 do{ //player's turn
 
+	printPTurn(); //Player turn
 			cout << "\n\nPress <1 to Hit> <2 to Stay>";
 			if(f_flag)
 				cout << "<3 to Surrender> <4 to Double Down>: " << endl;
@@ -231,10 +234,12 @@ do{ //player's turn
 		}
 
 		else { //computer's turn
+			printDTurn(); //Dealer turn
+
 			stop = 0;
 			index = 2;
 			Hsum = house.sum();
-			cout << "\n**********\nDEALER";
+			cout << "\n************\nDEALER";
 
 			while((Hsum < 17) && (!house.bust)){
 				printHand(house);
@@ -308,19 +313,41 @@ void instruction(){
 }
 
 void printMenu(){
-	cout << " \n**************************************************************\n" << endl;
+	cout << " \n****************************************************************\n" << endl;
 	cout << " #@@@@@ #@`     @@+   @@@@# #@ `@@    #@`  @@@   #@@@@ .@+ @@," << endl;
 	cout << " #@` @@ #@`    +@@@  #@, #@ #@ @@     #@`  @;@  `@@ `@+.@+@@:  " << endl;
 	cout << " #@@@@' #@`    @@:@` @@     #@@@#     #@` +@ @# '@,    .@@@@ " << endl;
 	cout << " #@@@@@ #@`   `@: @# @@     #@@@@`    #@` @@ @@ '@,    .@@@@# " << endl;
 	cout << " #@` #@ #@`   #@@@@@ #@. #@ #@. @@ @@ #@ `@@@@@.`@# .@+.@# @@ " << endl;
 	cout << " #@@@@@ #@@@@.@@  #@. @@@@# #@  @@'`@@@@ #@  `@# #@@@@ .@+ ,@@" << endl;
-	cout << " \n**************************************************************" << endl;
+	cout << " \n****************************************************************" << endl;
 	cout << "Welcome to Blackjack.\n" << endl;
 	cout << "Press: 1 to start playing!" << endl;
 	cout << "       2 to read the instructions" << endl;
 	cout << "       3 to reset save\n\t (Great for if you go broke!)" << endl;
 	cout << "       4 to quit" << endl;
+}
 
+void printPTurn(){
+	cout << " \n**********************************************************************\n" << endl;
+	cout << " @@@@@``@#     @@@  ,@# +@: @@@@@ #@@@@@    @@@@@@ @@  @@ #@@@@@ #@# :@." << endl;
+	cout << " @@ ,@+`@#     @;@   @@ @@  @#    #@` @@      @@   @@  @@ #@` @@ #@@`:@." << endl;
+	cout << " @@@@@,`@#    +@ @#   @@@   @@@@@ #@@@@@      @@   @@  @@ #@@@@@ #@@@:@." << endl;
+	cout << " @@@@` `@#    @@ @@   :@'   @@@@@ #@@@@       @@   @@  @@ #@@@@  #@ @@@." << endl;
+	cout << " @@    `@#   `@@@@@.  :@:   @#    #@`'@@      @@   @@  @@ #@`'@@ #@ #@@." << endl;
+	cout << " @@    `@@@@##@  `@#  :@:   @@@@@ #@` @@      @@   .@@@@. #@` @@ #@  @@." << endl;
+	cout << " \n**********************************************************************\n" << endl;
+}
+
+void printDTurn(){
+	cout << " \n**********************************************************************\n" << endl;
+	cout << " @@@@   @@@@@:  #@#  `@#    @@@@@ #@@@@     @@@@@@ @@  @@ #@@@@  #@  :@." << endl;
+	cout << " @@@@@, @@@@@:  @@@  `@#    @@@@@ #@@@@@    @@@@@@ @@  @@ #@@@@@ #@@ :@." << endl;
+	cout << " @@  @@ @@     .@.@. `@#    @#    #@` @@      @@   @@  @@ #@` @@ #@@::@." << endl;
+	cout << " @@  @@ @@@@@  #@ @@ `@#    @@@@@ #@@@@#      @@   @@  @@ #@@@@# #@#@:@." << endl;
+	cout << " @@  @@ @@     @@@@@ `@#    @#    #@`@@       @@   @@  @@ #@`@@  #@ @@@." << endl;
+	cout << " @@ +@+ @@    ,@@@@@:`@@@@# @#    #@``@@      @@   @@..@@ #@``@@ #@ ,@@." << endl;
+	cout << " @@@@@  @@@@@+@@   @@`@@@@# @@@@@ #@` @@,     @@    @@@@  #@` @@,#@  @@." << endl;
+	cout << " \n**********************************************************************\n" << endl;
 }
 
