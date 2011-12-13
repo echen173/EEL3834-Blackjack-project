@@ -3831,3 +3831,19 @@ Time consumed: 702  ms.
 g++ -o blackjack.exe save.o playingCards.o blackjack.o
 Build complete for project blackjack
 Time consumed: 250  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for blackjack
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o playingCards.o ..\playingCards.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'void game()':
+..\blackjack.cpp:93:7: warning: unused variable 'pause'
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 1123  ms.  

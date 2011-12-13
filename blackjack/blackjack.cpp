@@ -88,8 +88,8 @@ int main(){
 void game(){
 	Deck deck;
 	Hand player1, house;
-	int contin = 1, chips, betselect, bet, entry, Psum = 0, Hsum;
-	bool stop = 0, s_flag, f_flag;
+	int contin = 1, chips, betselect, bet, entry, Psum = 0, Hsum = 0;
+	bool stop, s_flag, f_flag;
 	char pause;
 
 	while(contin){
