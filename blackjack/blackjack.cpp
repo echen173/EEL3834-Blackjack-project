@@ -90,7 +90,6 @@ void game(){
 	Hand player1, house;
 	int contin = 1, chips, betselect, bet, entry, Psum = 0, Hsum = 0;
 	bool stop, s_flag, f_flag;
-	char pause;
 
 	while(contin){
 	deck.shuffle();

@@ -66,7 +66,7 @@ public:
 
 class Deck {
 public:
-	int remaining;
+	//int remaining;
 	Card card[52];
 	Deck(){		//default constructor
 		int k = 0;
@@ -91,22 +91,22 @@ public:
 				k++;
 			}
 		}
-		remaining = 52;
+		//remaining = 52;
 	}
 
 	Card hit(){
 		int index;
 		Card x;
 
-		if (remaining != 0){
+		//if (remaining != 0){
 		do{
 		index = rand() % 52;
 		}while(card[index].picked);
 
 		card[index].setPicked();
 		x = card[index];
-		remaining--;
-		}
+		//remaining--;
+		//}
 		return x;
 	}
 
