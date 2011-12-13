@@ -108,14 +108,10 @@ public:
 	}
 
 	void shuffle(){
-		int k = 0;
-		for (int i=1; i<=4; i++){   //card suits c(clubs), d(diamond), h(hearts), s(spades)
-			for (int j=1; j<=13; j++){  //card values 1 - 13
-				card[k].picked = 0; //initialize all cards to "not picked"
-								k++;
+			for (int i = 0; i<52; i++){
+				card[i].picked = 0;
 			}
 		}
-	}
 
 	Card hit(){
 		int index;

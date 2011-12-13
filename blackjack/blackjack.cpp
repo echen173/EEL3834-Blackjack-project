@@ -90,9 +90,10 @@ void game(){
 	Hand player1, house;
 	int contin = 1, chips, betselect, bet, entry, Psum = 0, Hsum;
 	bool stop = 0, s_flag, f_flag;
+	char pause;
 
 	while(contin){
-	cin.ignore();
+	deck.shuffle();
 	s_flag = 0; //surrender flag
 	f_flag = 1; //first action flag
 	stop = 0;
@@ -142,7 +143,7 @@ void game(){
 			}
 
 do{ //player's turn
-		if(!(Psum == 21)){ //ask user for action
+
 			cout << "\n\nPress <1 to Hit> <2 to Stay>";
 			if(f_flag)
 				cout << "<3 to Surrender> <4 to Double Down>: " << endl;
@@ -150,10 +151,8 @@ do{ //player's turn
 				cout << ": "<< endl;
 
 			cin >> entry;
-		}
-		else{ //if user is at 21, automatically stay
-			entry = 2;
-		}
+
+
 		if (cin.fail()){
 			cout << "Invalid selection" << endl;
 			cin.clear();

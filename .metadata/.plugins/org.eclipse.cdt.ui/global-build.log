@@ -3772,3 +3772,62 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
 g++ -o blackjack.exe save.o playingCards.o blackjack.o
 Build complete for project blackjack
 Time consumed: 889  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o playingCards.o ..\playingCards.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 624  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+In file included from ..\blackjack.cpp:14:0:
+..\/playingCards.h:123:7: error: 'void Deck::shuffle()' cannot be overloaded
+..\/playingCards.h:97:7: error: with 'void Deck::shuffle()'
+Build error occurred, build is stopped
+Time consumed: 390  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o playingCards.o ..\playingCards.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 1139  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 702  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for blackjack
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'void game()':
+..\blackjack.cpp:93:7: warning: unused variable 'pause'
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+c:/mingw/bin/../lib/gcc/mingw32/4.5.2/../../../../mingw32/bin/ld.exe: cannot open output file blackjack.exe: Permission denied
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 702  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 250  ms.  
