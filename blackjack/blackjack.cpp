@@ -38,6 +38,7 @@ int main(){
 	}
 
 	do{
+		//INSERT PRINT MENU HERE WITH FANCY FORMATTING
 	cout << "Press 1 to start playing!" << endl;
 	cout << "Press 2 to read the instructions" << endl;
 	cout << "Press 3 to reset save\n\t (Great for if you go broke!)" << endl;
@@ -91,6 +92,8 @@ void game(){
 	int contin = 1, chips, betselect, bet, entry, Psum = 0, Hsum = 0;
 	bool stop, s_flag, f_flag;
 
+	printInfo(); //Welcome the player
+
 	while(contin){
 	deck.shuffle();
 	int index = 2;
@@ -98,7 +101,6 @@ void game(){
 	f_flag = 1; //first action flag
 	stop = 0;
 
-	printInfo();
 	chips = loadPlayer();
 
 
@@ -208,12 +210,13 @@ do{ //player's turn
 				else { //Stay routine
 					if((bet*2)>chips)  //message for not enough chips to double down
 						cout << "You don't have enough chips for that!" << endl;
-
+					else{
 					cout << "Invalid selection. \nDefaulted to 'Stay'." << endl;
 					printHand(player1);
 									Psum = player1.sum(); //check if bust and return sum
 									cout << "\nPlayer sum: " << Psum << endl;
 									stop = 1;
+					}
 				}
 				break;
 			default:
@@ -279,6 +282,8 @@ do{ //player's turn
 		chips -= ((float)bet/2);
 		}
 	}
+if(chips < 0) //make sure chips never negative
+	chips = 0;
 
 update(chips); //update player's chips into save file after a hand
 
