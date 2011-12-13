@@ -89,9 +89,11 @@ void game(){
 	int contin = 1, chips, betselect, bet, entry, Psum = 0, Hsum;
 	bool stop = 0, s_flag, f_flag;
 
-while(contin){
+	while(contin){
+	cin.ignore();
 	s_flag = 0; //surrender flag
 	f_flag = 1; //first action flag
+	stop = 0;
 
 	chips = loadPlayer();
 	player1 = deck.createHand();
@@ -143,7 +145,8 @@ do{ //player's turn
 			if(f_flag)
 				cout << "<3 to Surrender> <4 to Double Down>: " << endl;
 			else
-				cout << " : "<< endl;
+				cout << ": "<< endl;
+
 			cin >> entry;
 		}
 		else{ //if user is at 21, automatically stay
@@ -157,6 +160,7 @@ do{ //player's turn
 		else {
 			switch(entry){
 			case 1://Hit
+				f_flag = 0;
 				player1.card[index] = deck.hit(); //Hit routine
 				player1.size++;
 				index++;
@@ -273,6 +277,7 @@ cin >> contin;
 
 if (cin.fail()){
 	cout << "Invalid selection" << endl;
+	contin = 0;
 	cin.clear();
 	cin.ignore();
 	}

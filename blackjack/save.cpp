@@ -75,7 +75,7 @@ void update(int chips){ //update save file
 				fileIn >> num;
 			fileIn.close();
 				//num = chips;
-				cout << "\n" << save[0] << endl;//print out updated Player and Chips
+				cout << "\n" << save[0] << "'s" << endl;//print out updated Player and Chips
 				cout << "Remaining chips: " << num << '\n' << endl;
 
 		file.open("save.txt");
