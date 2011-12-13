@@ -2974,3 +2974,714 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
 g++ -o blackjack.exe playingCards.o blackjack.o
 Build complete for project blackjack
 Time consumed: 665  ms.  
+
+**** Rebuild of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o playingCards.o ..\playingCards.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 1872  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+blackjack.o: In function `Z8saveMenuv':
+C:\Users\Eli\EEL3834-Blackjack-project\blackjack\Debug/..//save.cpp:13: multiple definition of `saveMenu()'
+save.o:C:\Users\Eli\EEL3834-Blackjack-project\blackjack\Debug/../save.cpp:13: first defined here
+blackjack.o: In function `Z9newPlayerv':
+C:\Users\Eli\EEL3834-Blackjack-project\blackjack\Debug/..//save.cpp:16: multiple definition of `newPlayer()'
+save.o:C:\Users\Eli\EEL3834-Blackjack-project\blackjack\Debug/../save.cpp:16: first defined here
+blackjack.o: In function `Z10loadPlayerv':
+C:\Users\Eli\EEL3834-Blackjack-project\blackjack\Debug/..//save.cpp:37: multiple definition of `loadPlayer()'
+save.o:C:\Users\Eli\EEL3834-Blackjack-project\blackjack\Debug/../save.cpp:37: first defined here
+blackjack.o: In function `Z6updatei':
+C:\Users\Eli\EEL3834-Blackjack-project\blackjack\Debug/..//save.cpp:71: multiple definition of `update(int)'
+save.o:C:\Users\Eli\EEL3834-Blackjack-project\blackjack\Debug/../save.cpp:71: first defined here
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 921  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+blackjack.o: In function `Z8saveMenuv':
+C:\Users\Eli\EEL3834-Blackjack-project\blackjack\Debug/..//save.cpp:8: multiple definition of `saveMenu()'
+save.o:C:\Users\Eli\EEL3834-Blackjack-project\blackjack\Debug/../save.cpp:8: first defined here
+blackjack.o: In function `Z9newPlayerv':
+C:\Users\Eli\EEL3834-Blackjack-project\blackjack\Debug/..//save.cpp:11: multiple definition of `newPlayer()'
+save.o:C:\Users\Eli\EEL3834-Blackjack-project\blackjack\Debug/../save.cpp:11: first defined here
+blackjack.o: In function `Z10loadPlayerv':
+C:\Users\Eli\EEL3834-Blackjack-project\blackjack\Debug/..//save.cpp:32: multiple definition of `loadPlayer()'
+save.o:C:\Users\Eli\EEL3834-Blackjack-project\blackjack\Debug/../save.cpp:32: first defined here
+blackjack.o: In function `Z6updatei':
+C:\Users\Eli\EEL3834-Blackjack-project\blackjack\Debug/..//save.cpp:66: multiple definition of `update(int)'
+save.o:C:\Users\Eli\EEL3834-Blackjack-project\blackjack\Debug/../save.cpp:66: first defined here
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 1607  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 1155  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 1139  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+..\save.cpp: In function 'int loadPlayer()':
+..\save.cpp:34:7: warning: unused variable 'confirm'
+..\save.cpp:35:13: warning: unused variable 'junk'
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 1124  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+..\save.cpp: In function 'int loadPlayer()':
+..\save.cpp:35:13: warning: unused variable 'junk'
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+c:/mingw/bin/../lib/gcc/mingw32/4.5.2/../../../../mingw32/bin/ld.exe: cannot open output file blackjack.exe: Permission denied
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 1060  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 624  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'int main()':
+..\blackjack.cpp:49:13: error: aggregate 'std::ofstream file' has incomplete type and cannot be defined
+..\blackjack.cpp:50:4: error: 'vector' was not declared in this scope
+..\blackjack.cpp:50:17: error: expected primary-expression before '>' token
+..\blackjack.cpp:50:19: error: 'out' was not declared in this scope
+..\blackjack.cpp:63:8: error: jump to case label
+..\blackjack.cpp:51:11: error:   crosses initialization of 'std::string nameOut'
+..\blackjack.cpp:48:8: error:   crosses initialization of 'int start'
+..\blackjack.cpp:67:3: error: jump to case label
+..\blackjack.cpp:51:11: error:   crosses initialization of 'std::string nameOut'
+..\blackjack.cpp:48:8: error:   crosses initialization of 'int start'
+Build error occurred, build is stopped
+Time consumed: 312  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 577  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 686  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'int main()':
+..\blackjack.cpp:67:8: error: jump to case label
+..\blackjack.cpp:56:11: error:   crosses initialization of 'std::string nameOut'
+..\blackjack.cpp:55:19: error:   crosses initialization of 'std::vector<std::basic_string<char> > out'
+..\blackjack.cpp:54:13: error:   crosses initialization of 'std::ofstream file'
+..\blackjack.cpp:53:8: error:   crosses initialization of 'int start'
+..\blackjack.cpp:71:3: error: jump to case label
+..\blackjack.cpp:56:11: error:   crosses initialization of 'std::string nameOut'
+..\blackjack.cpp:55:19: error:   crosses initialization of 'std::vector<std::basic_string<char> > out'
+..\blackjack.cpp:54:13: error:   crosses initialization of 'std::ofstream file'
+..\blackjack.cpp:53:8: error:   crosses initialization of 'int start'
+Build error occurred, build is stopped
+Time consumed: 374  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 889  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'int main()':
+..\blackjack.cpp:27:11: error: 'newplayer' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 436  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+c:/mingw/bin/../lib/gcc/mingw32/4.5.2/../../../../mingw32/bin/ld.exe: cannot open output file blackjack.exe: Permission denied
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 578  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 203  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 640  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 687  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'int main()':
+..\blackjack.cpp:24:13: warning: unused variable 'pause'
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+c:/mingw/bin/../lib/gcc/mingw32/4.5.2/../../../../mingw32/bin/ld.exe: cannot open output file blackjack.exe: Permission denied
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 561  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 203  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for blackjack
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+..\save.cpp: In function 'int loadPlayer()':
+..\save.cpp:36:13: warning: unused variable 'junk'
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 765  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+c:/mingw/bin/../lib/gcc/mingw32/4.5.2/../../../../mingw32/bin/ld.exe: cannot open output file blackjack.exe: Permission denied
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 577  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 187  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 687  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+..\save.cpp: In function 'int loadPlayer()':
+..\save.cpp:36:13: warning: unused variable 'junk'
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 749  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 702  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+..\save.cpp: In function 'int loadPlayer()':
+..\save.cpp:36:13: warning: unused variable 'junk'
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 1185  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+In file included from ..\blackjack.cpp:13:0:
+..\/save.h:11:1: error: 'string' does not name a type
+..\blackjack.cpp: In function 'int main()':
+..\blackjack.cpp:33:13: error: 'newPlayer' was not declared in this scope
+..\blackjack.cpp:59:14: error: 'newPlayer' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 390  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+In file included from ..\blackjack.cpp:13:0:
+..\/save.h:11:1: error: 'string' does not name a type
+..\blackjack.cpp: In function 'int main()':
+..\blackjack.cpp:33:13: error: 'newPlayer' was not declared in this scope
+..\blackjack.cpp:59:14: error: 'newPlayer' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 375  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+..\save.cpp: In function 'std::string newPlayer()':
+..\save.cpp:28:1: warning: no return statement in function returning non-void
+..\save.cpp: In function 'int loadPlayer()':
+..\save.cpp:36:13: warning: unused variable 'junk'
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+In file included from ..\blackjack.cpp:13:0:
+..\/save.h:12:1: error: 'string' does not name a type
+..\blackjack.cpp: In function 'int main()':
+..\blackjack.cpp:33:13: error: 'newPlayer' was not declared in this scope
+..\blackjack.cpp:59:14: error: 'newPlayer' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 936  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 624  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+..\save.cpp: In function 'int loadPlayer()':
+..\save.cpp:36:13: warning: unused variable 'junk'
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 1186  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+..\save.cpp: In function 'int loadPlayer()':
+..\save.cpp:36:13: warning: unused variable 'junk'
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+c:/mingw/bin/../lib/gcc/mingw32/4.5.2/../../../../mingw32/bin/ld.exe: cannot open output file blackjack.exe: Permission denied
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 687  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 312  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+..\save.cpp: In function 'int loadPlayer()':
+..\save.cpp:36:13: warning: unused variable 'junk'
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+c:/mingw/bin/../lib/gcc/mingw32/4.5.2/../../../../mingw32/bin/ld.exe: cannot open output file blackjack.exe: Permission denied
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 686  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 187  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'void game()':
+..\blackjack.cpp:101:5: error: expected primary-expression before ')' token
+Build error occurred, build is stopped
+Time consumed: 406  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 640  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 749  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 702  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 687  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for blackjack
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 702  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 702  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 687  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 795  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'void game(int)':
+..\blackjack.cpp:88:14: warning: unused variable 'bet'
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 812  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'void game(int)':
+..\blackjack.cpp:88:14: warning: unused variable 'bet'
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 952  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'void game(int)':
+..\blackjack.cpp:88:14: warning: unused variable 'bet'
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 749  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 827  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 749  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'void game(int)':
+..\blackjack.cpp:179:3: error: expected '}' before 'else'
+Build error occurred, build is stopped
+Time consumed: 437  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 639  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'void game(int)':
+..\blackjack.cpp:243:1: error: 'else' without a previous 'if'
+Build error occurred, build is stopped
+Time consumed: 375  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 686  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 765  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'void game(int)':
+..\blackjack.cpp:233:2: error: expected '}' before 'else'
+..\blackjack.cpp: At global scope:
+..\blackjack.cpp:259:1: error: expected declaration before '}' token
+Build error occurred, build is stopped
+Time consumed: 374  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp:260:1: error: expected declaration before '}' token
+Build error occurred, build is stopped
+Time consumed: 390  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 811  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 811  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 749  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'int main()':
+..\blackjack.cpp:59:14: error: too many arguments to function 'void game()'
+..\blackjack.cpp:20:6: note: declared here
+..\blackjack.cpp: In function 'void game()':
+..\blackjack.cpp:124:10: error: 'chips' was not declared in this scope
+..\blackjack.cpp:160:5: error: 'chips' was not declared in this scope
+..\blackjack.cpp:198:4: error: 'chips' was not declared in this scope
+..\blackjack.cpp:225:6: error: 'chips' was not declared in this scope
+..\blackjack.cpp:232:6: error: 'chips' was not declared in this scope
+..\blackjack.cpp:237:5: error: 'chips' was not declared in this scope
+..\blackjack.cpp:244:3: error: 'chips' was not declared in this scope
+..\blackjack.cpp:247:8: error: 'chips' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 375  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'void game()':
+..\blackjack.cpp:124:10: error: 'chips' was not declared in this scope
+..\blackjack.cpp:160:5: error: 'chips' was not declared in this scope
+..\blackjack.cpp:198:4: error: 'chips' was not declared in this scope
+..\blackjack.cpp:225:6: error: 'chips' was not declared in this scope
+..\blackjack.cpp:232:6: error: 'chips' was not declared in this scope
+..\blackjack.cpp:237:5: error: 'chips' was not declared in this scope
+..\blackjack.cpp:244:3: error: 'chips' was not declared in this scope
+..\blackjack.cpp:247:8: error: 'chips' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 375  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+..\save.cpp: In function 'int loadPlayer()':
+..\save.cpp:36:13: warning: unused variable 'junk'
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 1373  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'void game()':
+..\blackjack.cpp:248:13: error: too many arguments to function 'void update()'
+..\/save.h:13:6: note: declared here
+Build error occurred, build is stopped
+Time consumed: 374  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o save.o ..\save.cpp
+..\save.cpp: In function 'int loadPlayer()':
+..\save.cpp:36:13: warning: unused variable 'junk'
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+blackjack.o: In function `Z4gamev':
+C:\Users\Eli\EEL3834-Blackjack-project\blackjack\Debug/../blackjack.cpp:248: undefined reference to `update()'
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 1280  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+..\blackjack.cpp: In function 'void game()':
+..\blackjack.cpp:248:13: error: too many arguments to function 'void update()'
+..\/save.h:13:6: note: declared here
+Build error occurred, build is stopped
+Time consumed: 374  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 702  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for blackjack
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+c:/mingw/bin/../lib/gcc/mingw32/4.5.2/../../../../mingw32/bin/ld.exe: cannot open output file blackjack.exe: Permission denied
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 687  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 188  ms.  

@@ -36,17 +36,17 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="blackjack.cpp" partName="blackjack.cpp" path="C:/Users/Eli/Dropbox/EEL3834/Project/blackjack/blackjack.cpp" title="blackjack.cpp" tooltip="blackjack/blackjack.cpp" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="blackjack.cpp" partName="blackjack.cpp" path="C:/Users/Eli/EEL3834-Blackjack-project/blackjack/blackjack.cpp" title="blackjack.cpp" tooltip="blackjack/blackjack.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/blackjack/blackjack.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1573" selectionTopPixel="1135"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2540" selectionTopPixel="995"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="playingCards.h" partName="playingCards.h" path="C:/Users/Eli/Dropbox/EEL3834/Project/blackjack/playingCards.h" title="playingCards.h" tooltip="blackjack/playingCards.h" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="playingCards.h" partName="playingCards.h" path="C:/Users/Eli/EEL3834-Blackjack-project/blackjack/playingCards.h" title="playingCards.h" tooltip="blackjack/playingCards.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/blackjack/playingCards.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="722" selectionTopPixel="1109"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1997" selectionTopPixel="1603"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="playingCards.cpp" partName="playingCards.cpp" path="C:/Users/Eli/Dropbox/EEL3834/Project/blackjack/playingCards.cpp" title="playingCards.cpp" tooltip="blackjack/playingCards.cpp" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="playingCards.cpp" partName="playingCards.cpp" path="C:/Users/Eli/EEL3834-Blackjack-project/blackjack/playingCards.cpp" title="playingCards.cpp" tooltip="blackjack/playingCards.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/blackjack/playingCards.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2195" selectionTopPixel="1648"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="557" selectionTopPixel="653"/>
 </editor>
 </editors>
 <views>
@@ -57,11 +57,6 @@
 <view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors (2 items)"/>
-<category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Errors"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="482"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -202,88 +197,12 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/blackjack/blackjack.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/blackjack/playingCards.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/blackjack/playingCards.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/blackjack/playingCards.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/blackjack/playingCards.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/blackjack/playingCards.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/blackjack/playingCards.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/blackjack/blackjack.cpp"/>
 </editors>
-<item historyLabel="playingCards.h" index="2">
-<position info="not_deleted" x="351" y="38"/>
-</item>
-<item historyLabel="playingCards.cpp" index="1">
-<position info="not_deleted" x="525" y="0"/>
-</item>
-<item historyLabel="playingCards.h" index="2">
-<position info="not_deleted" x="391" y="0"/>
-</item>
-<item historyLabel="blackjack.cpp" index="0">
-<position info="not_deleted" x="1228" y="0"/>
-</item>
-<item historyLabel="playingCards.h" index="2">
-<position info="not_deleted" x="391" y="0"/>
-</item>
-<item historyLabel="playingCards.h" index="2">
-<position/>
-</item>
-<item historyLabel="playingCards.h" index="2">
-<position/>
-</item>
-<item historyLabel="blackjack.cpp" index="0">
-<position info="not_deleted" x="1228" y="0"/>
-</item>
-<item historyLabel="playingCards.h" index="2">
-<position/>
-</item>
-<item historyLabel="blackjack.cpp" index="0">
-<position info="not_deleted" x="1228" y="0"/>
-</item>
-<item historyLabel="playingCards.h" index="2">
-<position/>
-</item>
-<item historyLabel="playingCards.cpp" index="1">
-<position info="not_deleted" x="525" y="0"/>
-</item>
-<item historyLabel="playingCards.h" index="2">
-<position info="not_deleted" x="407" y="0"/>
-</item>
-<item historyLabel="playingCards.cpp" index="1">
-<position info="not_deleted" x="851" y="0"/>
-</item>
-<item historyLabel="playingCards.h" index="2">
-<position info="not_deleted" x="825" y="0"/>
-</item>
-<item historyLabel="blackjack.cpp" index="0">
-<position info="not_deleted" x="167" y="0"/>
-</item>
-<item historyLabel="playingCards.cpp" index="1">
-<position info="not_deleted" x="495" y="0"/>
-</item>
-<item historyLabel="blackjack.cpp" index="0">
-<position info="not_deleted" x="167" y="0"/>
-</item>
-<item historyLabel="playingCards.h" index="2">
-<position info="not_deleted" x="819" y="0"/>
-</item>
-<item historyLabel="blackjack.cpp" index="0">
-<position info="not_deleted" x="1681" y="0"/>
-</item>
-<item historyLabel="playingCards.cpp" index="1">
-<position info="not_deleted" x="507" y="0"/>
-</item>
-<item historyLabel="playingCards.h" index="2">
-<position info="not_deleted" x="371" y="0"/>
-</item>
-<item historyLabel="blackjack.cpp" index="0">
-<position info="not_deleted" x="2107" y="0"/>
-</item>
-<item historyLabel="playingCards.cpp" index="1">
-<position info="not_deleted" x="507" y="0"/>
-</item>
-<item historyLabel="playingCards.h" index="2">
-<position info="not_deleted" x="371" y="0"/>
-</item>
-<item historyLabel="blackjack.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="playingCards.h" index="2">
-<position info="not_deleted" x="371" y="0"/>
-</item>
 <item historyLabel="playingCards.cpp" index="1">
 <position info="not_deleted" x="2283" y="0"/>
 </item>
@@ -350,8 +269,89 @@
 <item historyLabel="playingCards.cpp" index="1">
 <position info="not_deleted" x="2195" y="0"/>
 </item>
-<item active="true" historyLabel="blackjack.cpp" index="0">
+<item historyLabel="blackjack.cpp" index="0">
 <position info="not_deleted" x="1573" y="0"/>
+</item>
+<item historyLabel="blackjack.cpp" index="0">
+<position info="not_deleted" x="2187" y="0"/>
+</item>
+<item historyLabel="blackjack.cpp" index="0">
+<position info="not_deleted" x="2851" y="0"/>
+</item>
+<item historyLabel="blackjack.cpp" index="0">
+<position info="not_deleted" x="2650" y="0"/>
+</item>
+<item historyLabel="blackjack.cpp" index="0">
+<position info="not_deleted" x="2711" y="0"/>
+</item>
+<item historyLabel="playingCards.h" index="3">
+<position info="not_deleted" x="700" y="0"/>
+</item>
+<item historyLabel="playingCards.cpp" index="4">
+<position info="not_deleted" x="2465" y="0"/>
+</item>
+<item historyLabel="blackjack.cpp" index="0">
+<position info="not_deleted" x="2818" y="0"/>
+</item>
+<item historyLabel="playingCards.h" index="3">
+<position info="not_deleted" x="700" y="0"/>
+</item>
+<item historyLabel="blackjack.cpp" index="0">
+<position info="not_deleted" x="2818" y="0"/>
+</item>
+<item historyLabel="blackjack.cpp" index="0">
+<position info="not_deleted" x="2112" y="0"/>
+</item>
+<item historyLabel="playingCards.h" index="3">
+<position info="not_deleted" x="421" y="0"/>
+</item>
+<item historyLabel="blackjack.cpp" index="0">
+<position info="not_deleted" x="2112" y="0"/>
+</item>
+<item historyLabel="playingCards.h" index="3">
+<position info="not_deleted" x="421" y="0"/>
+</item>
+<item historyLabel="playingCards.h" index="3">
+<position info="not_deleted" x="772" y="0"/>
+</item>
+<item historyLabel="blackjack.cpp" index="0">
+<position info="not_deleted" x="2112" y="0"/>
+</item>
+<item historyLabel="blackjack.cpp" index="0">
+<position info="not_deleted" x="2810" y="0"/>
+</item>
+<item historyLabel="blackjack.cpp" index="0">
+<position info="not_deleted" x="2650" y="0"/>
+</item>
+<item historyLabel="blackjack.cpp" index="0">
+<position info="not_deleted" x="2152" y="0"/>
+</item>
+<item historyLabel="playingCards.h" index="3">
+<position info="not_deleted" x="394" y="559"/>
+</item>
+<item historyLabel="playingCards.cpp" index="4">
+<position info="not_deleted" x="557" y="0"/>
+</item>
+<item historyLabel="playingCards.h" index="3">
+<position info="not_deleted" x="421" y="0"/>
+</item>
+<item historyLabel="playingCards.cpp" index="4">
+<position info="not_deleted" x="557" y="0"/>
+</item>
+<item historyLabel="blackjack.cpp" index="0">
+<position info="not_deleted" x="2152" y="0"/>
+</item>
+<item historyLabel="playingCards.h" index="5">
+<position info="not_deleted" x="421" y="0"/>
+</item>
+<item historyLabel="playingCards.cpp" index="6">
+<position info="not_deleted" x="557" y="0"/>
+</item>
+<item historyLabel="playingCards.h" index="5">
+<position info="not_deleted" x="694" y="0"/>
+</item>
+<item active="true" historyLabel="blackjack.cpp" index="7">
+<position info="not_deleted" x="2540" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

@@ -43,21 +43,38 @@ public:
 	}
 
 	int sum(){ //check for bust
-		int value, sum = 0;
-		for (int i = 0; i < size; i++){
-			if ((card[i].number == 11) || (card[i].number == 12) || (card[i].number == 13))
-				value = 10;
-			else
-				value = card[i].number;
+			int value, ace = 0, sum = 0;
+			for (int i = 0; i < size; i++){
+				if ((card[i].number == 11) || (card[i].number == 12) || (card[i].number == 13))
+					value = 10;
+				else
+					value = card[i].number;
 
-			sum += value;
+				if (value == 1){ //account for Ace being 1 or 11
+					ace++;
+				}
+
+				else
+				sum += value;
+			}
+
+			while(ace){ //Ace can be 1 or 11
+				if ((sum + 11)<=21){
+					sum += 11;
+					ace--;
+				}
+				else{
+					sum += 1;
+					ace--;
+				}
+			}
+
+			if (sum > 21)
+				bust = 1;
+			else
+				bust = 0;
+			return sum;
 		}
-		if (sum > 21)
-			bust = 1;
-		else
-			bust = 0;
-		return sum;
-	}
 };
 
 class Deck {
