@@ -5,9 +5,6 @@
  *      Author: Eli
  */
 
-//write in checks for when chips are zero
-//consider improving code by using more functions
-//make printMenu /pseudo-gui
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
