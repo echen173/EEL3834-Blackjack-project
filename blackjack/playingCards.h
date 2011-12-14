@@ -14,11 +14,13 @@ public:
 	char suit;
 	bool picked;
 
+	void setPicked(){
+			picked = 1;
+		}
+
+private:
 	int getNumber();
 	char getSuit();
-	void setPicked(){
-		picked = 1;
-	}
 };
 
 class Hand{

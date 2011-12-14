@@ -350,7 +350,7 @@ void instruction(){
 	cout << "   Tie: Value of your bet will be returned to you." << endl;
 	cout << endl;
 	cout << "If you run out of chips, you may create a new save in the menu to restore 1000 chips.\n" << endl;
-	cout << "Good luck! And most important of all, Have FUN!\n" << endl;
+	cout << "Good luck! And most important of all, Have FUN!" << endl;
 }
 
 void printMenu(){

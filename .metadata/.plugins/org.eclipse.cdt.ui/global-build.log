@@ -4330,3 +4330,173 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
 g++ -o blackjack.exe save.o playingCards.o blackjack.o
 Build complete for project blackjack
 Time consumed: 748  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+c:/mingw/bin/../lib/gcc/mingw32/4.5.2/../../../../mingw32/bin/ld.exe: cannot open output file blackjack.exe: Permission denied
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 702  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 312  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 827  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+In file included from ..\blackjack.cpp:14:0:
+..\/playingCards.h: In member function 'Card Deck::hit()':
+..\/playingCards.h:19:7: error: 'void Card::setPicked()' is private
+..\/playingCards.h:106:25: error: within this context
+Build error occurred, build is stopped
+Time consumed: 1436  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o playingCards.o ..\playingCards.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 1498  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+In file included from ..\blackjack.cpp:14:0:
+..\/playingCards.h: In member function 'Hand Deck::createHand()':
+..\/playingCards.h:32:2: error: 'Hand::Hand()' is private
+..\/playingCards.h:122:8: error: within this context
+..\/playingCards.h:30:14: error: 'Card Hand::card [10]' is private
+..\/playingCards.h:123:8: error: within this context
+..\/playingCards.h:30:14: error: 'Card Hand::card [10]' is private
+..\/playingCards.h:124:8: error: within this context
+..\/playingCards.h:28:6: error: 'int Hand::size' is private
+..\/playingCards.h:125:8: error: within this context
+..\/playingCards.h: In function 'void game()':
+..\/playingCards.h:32:2: error: 'Hand::Hand()' is private
+..\blackjack.cpp:97:7: error: within this context
+..\/playingCards.h:32:2: error: 'Hand::Hand()' is private
+..\blackjack.cpp:97:16: error: within this context
+..\/playingCards.h:30:14: error: 'Card Hand::card [10]' is private
+..\blackjack.cpp:152:18: error: within this context
+..\/playingCards.h:30:14: error: 'Card Hand::card [10]' is private
+..\blackjack.cpp:178:13: error: within this context
+..\/playingCards.h:28:6: error: 'int Hand::size' is private
+..\blackjack.cpp:179:13: error: within this context
+..\/playingCards.h:37:6: error: 'int Hand::sum()' is private
+..\blackjack.cpp:182:24: error: within this context
+..\/playingCards.h:37:6: error: 'int Hand::sum()' is private
+..\blackjack.cpp:187:24: error: within this context
+..\/playingCards.h:37:6: error: 'int Hand::sum()' is private
+..\blackjack.cpp:199:29: error: within this context
+..\/playingCards.h:30:14: error: 'Card Hand::card [10]' is private
+..\blackjack.cpp:208:13: error: within this context
+..\/playingCards.h:28:6: error: 'int Hand::size' is private
+..\blackjack.cpp:209:17: error: within this context
+..\/playingCards.h:37:6: error: 'int Hand::sum()' is private
+..\blackjack.cpp:212:28: error: within this context
+..\/playingCards.h:37:6: error: 'int Hand::sum()' is private
+..\blackjack.cpp:221:29: error: within this context
+..\/playingCards.h:37:6: error: 'int Hand::sum()' is private
+..\blackjack.cpp:230:28: error: within this context
+..\/playingCards.h:29:7: error: 'bool Hand::bust' is private
+..\blackjack.cpp:236:20: error: within this context
+..\/playingCards.h:29:7: error: 'bool Hand::bust' is private
+..\blackjack.cpp:239:15: error: within this context
+..\/playingCards.h:37:6: error: 'int Hand::sum()' is private
+..\blackjack.cpp:250:21: error: within this context
+..\/playingCards.h:29:7: error: 'bool Hand::bust' is private
+..\blackjack.cpp:253:33: error: within this context
+..\/playingCards.h:30:14: error: 'Card Hand::card [10]' is private
+..\blackjack.cpp:257:11: error: within this context
+..\/playingCards.h:28:6: error: 'int Hand::size' is private
+..\blackjack.cpp:258:11: error: within this context
+..\/playingCards.h:37:6: error: 'int Hand::sum()' is private
+..\blackjack.cpp:260:22: error: within this context
+..\/playingCards.h:29:7: error: 'bool Hand::bust' is private
+..\blackjack.cpp:266:14: error: within this context
+..\/playingCards.h:29:7: error: 'bool Hand::bust' is private
+..\blackjack.cpp:269:17: error: within this context
+..\/playingCards.h:29:7: error: 'bool Hand::bust' is private
+..\blackjack.cpp:269:53: error: within this context
+Build error occurred, build is stopped
+Time consumed: 437  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+In file included from ..\blackjack.cpp:14:0:
+..\/playingCards.h: In member function 'Hand Deck::createHand()':
+..\/playingCards.h:32:2: error: 'Hand::Hand()' is private
+..\/playingCards.h:122:8: error: within this context
+..\/playingCards.h:30:14: error: 'Card Hand::card [10]' is private
+..\/playingCards.h:123:8: error: within this context
+..\/playingCards.h:30:14: error: 'Card Hand::card [10]' is private
+..\/playingCards.h:124:8: error: within this context
+..\/playingCards.h:28:6: error: 'int Hand::size' is private
+..\/playingCards.h:125:8: error: within this context
+..\/playingCards.h: In function 'void game()':
+..\/playingCards.h:32:2: error: 'Hand::Hand()' is private
+..\blackjack.cpp:97:7: error: within this context
+..\/playingCards.h:32:2: error: 'Hand::Hand()' is private
+..\blackjack.cpp:97:16: error: within this context
+..\/playingCards.h:30:14: error: 'Card Hand::card [10]' is private
+..\blackjack.cpp:152:18: error: within this context
+..\/playingCards.h:30:14: error: 'Card Hand::card [10]' is private
+..\blackjack.cpp:178:13: error: within this context
+..\/playingCards.h:28:6: error: 'int Hand::size' is private
+..\blackjack.cpp:179:13: error: within this context
+..\/playingCards.h:30:14: error: 'Card Hand::card [10]' is private
+..\blackjack.cpp:208:13: error: within this context
+..\/playingCards.h:28:6: error: 'int Hand::size' is private
+..\blackjack.cpp:209:17: error: within this context
+..\/playingCards.h:29:7: error: 'bool Hand::bust' is private
+..\blackjack.cpp:236:20: error: within this context
+..\/playingCards.h:29:7: error: 'bool Hand::bust' is private
+..\blackjack.cpp:239:15: error: within this context
+..\/playingCards.h:29:7: error: 'bool Hand::bust' is private
+..\blackjack.cpp:253:33: error: within this context
+..\/playingCards.h:30:14: error: 'Card Hand::card [10]' is private
+..\blackjack.cpp:257:11: error: within this context
+..\/playingCards.h:28:6: error: 'int Hand::size' is private
+..\blackjack.cpp:258:11: error: within this context
+..\/playingCards.h:29:7: error: 'bool Hand::bust' is private
+..\blackjack.cpp:266:14: error: within this context
+..\/playingCards.h:29:7: error: 'bool Hand::bust' is private
+..\blackjack.cpp:269:17: error: within this context
+..\/playingCards.h:29:7: error: 'bool Hand::bust' is private
+..\blackjack.cpp:269:53: error: within this context
+Build error occurred, build is stopped
+Time consumed: 422  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o blackjack.o ..\blackjack.cpp
+g++ -o blackjack.exe save.o playingCards.o blackjack.o
+Build complete for project blackjack
+Time consumed: 811  ms.  
+
+**** Build of configuration Debug for project blackjack ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for blackjack
